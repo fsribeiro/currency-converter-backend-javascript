@@ -2,6 +2,9 @@
 dist
 /app/currency-converter/node_modules
 
+/db/**/data/*
+!db/**/data/.gitkeep
+
 # Logs
 logs
 *.log

@@ -1,0 +1,38 @@
+version: "3"
+
+services:
+  app:
+    build: ./app/.docker/
+    container_name: currency_converter_app
+    env_file: .env
+    restart: on-failure
+    ports:
+      - 3000:3000
+    volumes:
+      - ./app/currency-converter:/home/node/app
+    entrypoint: ["npm", "run", "start:dev"]
+    depends_on:
+      - db
+    networks:
+      - currency_converter
+
+  db:
+    build: ./db/.docker/
+    container_name: currency_converter_db
+    env_file: .env
+    environment:
+      - MONGO_CURRENCY_INITDB_ROOT_USERNAME=root
+      - MONGO_CURRENCY_INITDB_ROOT_PASSWORD=root
+    ports:
+      - 27017:27017
+    volumes:
+      - ./db/data/db:/data/db
+    networks:
+      - currency_converter
+    command: [ --auth ]
+
+
+networks:
+  currency_converter:
+    driver: bridge
+
