@@ -1,0 +1,22 @@
+[
+  {
+      "_id": {
+          "$oid": "5d3c99780be9dc0df102cfdb"
+      },
+      "email": "carlos@appmeleva.com.br",
+      "dataInclusao": {
+          "$date": "2019-07-27T18:35:36.737Z"
+      },
+      "__v": 0
+  },
+  {
+      "_id": {
+          "$oid": "6244b1c46406daf140aa112e"
+      },
+      "email": "badu.badu@ramper.com.br",
+      "dataInclusao": {
+          "Sdate": "2019-07-27T18:35:36.737Z",
+          "__v": 0
+      }
+  }
+]
