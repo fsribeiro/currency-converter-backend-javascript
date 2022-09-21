@@ -18,7 +18,7 @@ lerna-debug.log*
 .DS_Store
 
 # Tests
-/coverage
+/app/currency-converter/coverage
 /.nyc_output
 
 # IDEs and editors
