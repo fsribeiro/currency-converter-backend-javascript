@@ -14,7 +14,7 @@ export class ProductController {
   })
   @ApiParam({ name: 'id', description: 'product id' })
   @Get(':id')
-  async teste(@Param() params: GetOneProductDto) {
+  async getCurrency(@Param() params: GetOneProductDto) {
     return this.productService.getCurrency(params);
   }
 
