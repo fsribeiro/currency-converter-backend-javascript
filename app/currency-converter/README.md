@@ -51,11 +51,21 @@ npm run test
 
 ```
 
-## **Requisitos do projeto**
+## **Conexão com o banco local do docker**
 
 ```
-docker
-docker-compose
-nodejs
- typeorm migration:create -n create-migrations
+- localhost:27017
+- Nome do banco = teste
+- Nome do usuário = teste
+- Senha do banco = teste
+- O banco é populado na coleção products com dois registros por padrão
+```
+
+## **Exemplo de requisição**
+
+```
+curl -X 'GET' \
+  'http://localhost:3000/products/632b3eee78df41b229cef41f' \
+  -H 'accept: */*'
+
 ```

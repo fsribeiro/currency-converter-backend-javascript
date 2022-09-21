@@ -1,0 +1,18 @@
+[
+  {
+    "_id": {
+        "$oid": "63291e9e8dadda84e1023b2e"
+    },
+    "description" : "tenis nike",
+    "price" : 529.99,
+    "__v" : 0
+  },
+  {
+    "_id": {
+        "$oid": "632b3eee78df41b229cef41f"
+    },
+    "description" : "tenis puma",
+    "price" : 500,
+    "__v" : 0
+  }
+]
